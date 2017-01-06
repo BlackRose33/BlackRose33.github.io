@@ -1,4 +1,4 @@
-# BlackRose33.github.io
+BlackRose33.github.io
 Game Plan to get started:
 i. Three pages:
   > Home

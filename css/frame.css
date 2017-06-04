@@ -4,9 +4,12 @@
 }
 
 body {
-  background-color: black;
-	color: white;
-  font-family: "Vollkorn";
+  background: #131313 url(../img/background.jpg) top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: myFirstFont;
+  color: #999;
+  position: relative;
 }
 
 .container{
@@ -22,9 +25,9 @@ margin: 0;
 }
 
 .menu{
-  height: 10vh;
-  width: 100vw;
-  float: top;
+  height: 100vh;
+  width: 10vw;
+  float: left;
   position: absolute;
 }
 

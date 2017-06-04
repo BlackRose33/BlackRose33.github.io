@@ -1,26 +1,13 @@
-h4{
-  text-transform: uppercase;
+*, *:before, *:after {
+  box-sizing: border-box !important;
+  word-wrap: break-word !important;
 }
 
-.TopPanel{
-  text-align: center;
-  font-size: 30px;
-}
-
-table{
-  text-align: left;
-  width: 100vw;
-}
-
-.skills{
-  text-align: left;
-  width: auto;  
-}
-
-th{
-  padding-right: 2em;
-}
-
-.courses td{
-  padding-right: 1.5em;
+body{
+	background: url(../img/am.jpg) no-repeat #E7E7E7;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	font-family: myFirstFont;
 }

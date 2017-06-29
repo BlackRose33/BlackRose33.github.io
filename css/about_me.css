@@ -9,5 +9,10 @@ body{
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
-	font-family: myFirstFont;
+	font-family: inherit;
+}
+
+p{
+  font-size: 40px;
+  color: white;
 }

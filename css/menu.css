@@ -9,7 +9,7 @@ margin: 0;
 }
 
 .menu{
-  height: 10vh;
+  max-height: 10vh;
   width: 100vw;
   float: top;
   position: absolute;
@@ -43,7 +43,7 @@ border-radius: 5px 0 0;
 border-left: 3px solid rgba(0, 0, 0, 0);
 color: #808080;
 display: block;
-font-family: 'Lucida Console';
+font-family: 'Droid Sans', Arial, serif;
 font-size: 18px;
 line-height: 54px;
 padding: 0 25px;
@@ -191,10 +191,5 @@ transition-delay: 0s;
 .container{
 	display: inline-block;
   width: 100%;
-}
-
-article {
-    max-height: 100vh;
-    padding: 1em;
-    overflow: auto;
+  max-height: 10vh
 }

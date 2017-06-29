@@ -1,14 +1,14 @@
+{{define "base"}}
 <!DOCTYPE html>
-<!-- TODO: setup with Go later -->
 <html>
-<head>
-  <title>
-    ://Photography
-  </title>
+
+  <head>
+    <title>
+      {{template "title" .}}
+    </title>
 
   <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="../css/photography.css" />
   <link rel="stylesheet" type="text/css" href="../css/menu.css" />
 
 </head>
@@ -17,7 +17,7 @@
   <div class="container">
     <ul class="menu">
       <li><a href="/home">Home</a></li>
-      <li><a href="/about_me">About Me</a></li>
+      <li class="active"><a href="/about_me">About Me</a></li>
       <li><a href="/art">Artwork</a></li>
       <ul class="submenu">
         <li>Patterns</li>
@@ -25,12 +25,13 @@
         <li>Miscellaneous</li>
       </ul>
       <li><a href="/writing">Writing</a></li>
-      <li class="active"><a href="/photography">Photography</a></li>
+      <li><a href="/photography">Photography</a></li>
     </ul>
-
-    <article>
-    </article>
   </div>
+  <article>
+    {{template "body" .}}
+  </article>
 
 </body>
 </html>
+{{end}}

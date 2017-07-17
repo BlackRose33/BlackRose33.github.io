@@ -1,0 +1,39 @@
+*, *:before, *:after {
+  box-sizing: border-box !important;
+  word-wrap: break-word !important;
+}
+
+body{
+	background: url(../img/bg.jpg) no-repeat #E7E7E7;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	font-family: myFirstFont;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('../fonts/BEBAS.ttf');
+  font-weight: normal;
+  font-style: normal;
+
+}
+/*---start-content-header----*/
+.cheader h1{
+	color: #fff;
+	font-size: 4em;
+	font-weight: inherit;
+  word-spacing: 0.6em;
+}
+.cheader p{
+	color: #fff;
+	font-size: 1em;
+	font-weight: inherit;
+	word-spacing: 0.4em;
+}
+.cheader {
+  font-family: myFirstFont;
+	text-align: center;
+	margin-top: 7em;
+}

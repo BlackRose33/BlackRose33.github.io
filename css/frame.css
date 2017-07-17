@@ -4,7 +4,7 @@
 }
 
 body {
-  background: url(../img/back.jpg) no-repeat #E7E7E7;
+  background: url(../img/main-back-plain.jpg) no-repeat #E7E7E7;
   background-color: black;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -13,18 +13,125 @@ body {
   font-family: myFirstFont;
 }
 
-.container{
-	display: inline-block;
-  width: 100%;
-}
-
-article {
-    max-height: 100vh;
-    padding: 1em;
-    overflow: auto;
-}
-
 img.divider {
   -webkit-filter: invert(.8);
   filter: invert(.8);
+}
+
+.menu-1 {
+  margin: 5vh 0 0 0;
+}
+
+.menu-2 {
+  margin: 4px 0 0 0;
+}
+
+[class*='menu-'], [class*='menu-'] ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+[class*='menu-']{
+  max-height: 50vh;
+  width: 100vw;
+  position: relative;
+}
+
+[class*='menu-'] li {
+  display: inline;
+  background: -moz-linear-gradient(rgba(143, 143, 143, 0.55), rgba(139, 139, 139, 0.55));
+  background: -ms-linear-gradient(rgba(143, 143, 143, 0.55), rgba(139, 139, 139, 0.55));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(143, 143, 143, 0.55)) , color-stop(0%, rgba(139, 139, 139, 0.55)));
+  background: -webkit-linear-gradient(rgba(143, 143, 143, 0.55), rgba(139, 139, 139, 0.55));
+  background: -o-linear-gradient(rgba(143, 143, 143, 0.55), rgba(139, 139, 139, 0.55));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(143, 143, 143, 0.55)', endColorstr='rgba(139, 139, 139, 0.55)');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(143, 143, 143, 0.55)', endColorstr='rgba(139, 139, 139, 0.55)')";
+  background: linear-gradient(rgba(143, 143, 143, 0.55), rgba(139, 139, 139, 0.55));
+  min-width: 185px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+[class*='menu-'] > li {
+  display: inline-block;
+  position: relative;
+}
+
+[class*='menu-'] a {
+  color: #fff;
+  display: block;
+  font-family: 'Droid Sans', Arial, serif;
+  font-size: 19px;
+  line-height: 185px;
+  padding: 0 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+[class*='menu-'] li:hover {
+  background-color: #1c1c1c;
+  background: -moz-linear-gradient(#1c1c1c, #1b1b1b);
+  background: -ms-linear-gradient(#1c1c1c, #1b1b1b);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1c1c1c), color-stop(100%, #1b1b1b));
+  background: -webkit-linear-gradient(#1c1c1c, #1b1b1b);
+  background: -o-linear-gradient(#1c1c1c, #1b1b1b);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c1c1c', endColorstr='#1b1b1b');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c1c1c', endColorstr='#1b1b1b')";
+  background: linear-gradient(#1c1c1c, #1b1b1b);
+  border-radius: 20px;
+}
+
+.contact-me{
+  padding: 5px;
+  bottom: 7px;
+  position: absolute;
+}
+
+.contact-me a{
+  color: #fff;
+  padding-right: 5px; 
+  text-decoration: none;
+}
+
+[class*='fa fa-']{
+  min-width: 20px;
+  min-height: 20px; 
+
+}
+
+[class*='fa fa-']:hover{
+  min-width: 20px;
+  min-height: 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px 5px 5px 5px;
+  text-align: center;
+  padding: 0 2px;
+  line-height: 20px;
+}
+
+.name {
+  font-family: "Brush Script MT", cursive;
+  font-size: 100px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }

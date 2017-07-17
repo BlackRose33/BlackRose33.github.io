@@ -4,15 +4,58 @@
 }
 
 body{
-	background: url(../img/am.jpg) no-repeat #E7E7E7;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-	font-family: inherit;
+  background: url(../img/am.jpg) no-repeat #E7E7E7;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  font-family: inherit;
+}
+
+article{
+  font-size: 23px;
+    color: #ffb03b;
+
+  padding: 0 10vw 0 10vw;
 }
 
 p{
-  font-size: 40px;
-  color: white;
+  padding: 0 3vw 0 3vw;
+}
+
+p:first-letter{
+  font-size: 33px;
+}
+
+.h3{
+  color: #CBB299;
+  color: #aa8763;
+  font-size: 50px;
+}
+
+.h3:first-letter {
+  font-family: initialLetter;
+  font-size: 77px;
+}
+
+table{
+  padding: 0 3vw 0 3vw;
+  width: 100%;
+  text-align: left;
+}
+
+[class*='fa fa-']{
+  width: 7px;
+  height: 7px;
+  padding-right: 40px;
+}
+
+th, td{
+  padding-bottom: 2vh;
+}
+
+@font-face {
+  font-family: initialLetter;
+  src: url('../fonts/ZallmanCaps.ttf')
+  format('truetype');
 }
